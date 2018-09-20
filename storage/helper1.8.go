@@ -1,12 +1,12 @@
-// +build !go1.8
+// +build go1.8
 
 package storage
 
 import (
+	"context"
 	"fmt"
 
 	"cloud.google.com/go/storage"
-	"golang.org/x/net/context"
 )
 
 func NewClient(ctx context.Context) (*storage.Client, error) {
