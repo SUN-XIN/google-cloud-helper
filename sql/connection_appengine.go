@@ -15,10 +15,10 @@ import (
 
 var (
 	db             *sql.DB
-	connectionName = os.Getenv("CLOUDSQL_CONNECTION_NAME")
-	user           = os.Getenv("CLOUDSQL_USER")
-	password       = os.Getenv("CLOUDSQL_PASSWORD")
-	schemaName     = os.Getenv("CLOUDSQL_SCHEMA")
+	connectionName = os.Getenv("APPENGINESQL_CONNECTION_NAME")
+	user           = os.Getenv("APPENGINESQL_USER")
+	password       = os.Getenv("APPENGINESQL_PASSWORD")
+	schemaName     = os.Getenv("APPENGINESQL_SCHEMA")
 )
 
 func GetConnection(ctx context.Context) (*sql.DB, error) {
